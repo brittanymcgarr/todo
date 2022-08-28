@@ -10,13 +10,11 @@
   </p>
 
   <p>
-    <strong>Active:</strong>
-    <%= task.active %>
-  </p>
-
-  <p>
-    <strong>Complete:</strong>
-    <%= task.complete %>
+    <% if task.complete %>
+      <strong>Complete!</strong>
+    <% else %>
+      <strong>Pending</strong>
+    <% end %>
   </p>
 
 </div>
