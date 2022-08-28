@@ -1,0 +1,35 @@
+# Overview of the models used in application
+
+## Tasks ##
+Table: Tasks
+    id: integer
+    title: text
+    notes: text
+    complete: boolean
+    active: boolean
+
+### Future work: Create a user and display lists of tasks ###
+
+## Users ##
+Table: users
+    id: integer
+    username: text
+    email: text
+
+## Lists ##
+Table: lists
+    id: integer
+    user_id: integer
+    title: text
+    memo: text
+    active: boolean
+    complete: boolean
+
+## Tasks ##
+Table: tasks
+    id: integer
+    list_id: integer
+    title: text
+    notes: blob
+    active: boolean
+    complete: boolean
