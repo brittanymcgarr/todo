@@ -12,4 +12,108 @@
  *
  *= require_tree .
  *= require_self
+
  */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFCCFF;
+}
+
+.main {
+    background-color: #E6CCFF;
+
+    margin: 10em;
+    margin-top: 5em;
+
+    text-decoration: none;
+}
+
+.main::before,
+.main::after {
+    content: '';
+    position: absolute;
+    border: solid 2px #E6CCFF;
+}
+
+.main::before {
+    width: calc(100% + 40px);
+    height: 100%;
+}
+.main::after {
+    width: 100%;
+    height: calc(100% + 40px);
+}
+
+#tasks {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    alignment: center;
+    display: flex;
+    text-align: center;
+
+    background-color: #FFFAE6;
+    border: 1em solid #FFFAE6;
+    border-radius: 0.5em;
+}
+
+#todo {
+    flex: 1;
+    min-width: 40%;
+    max-width: 45%;
+
+    background-color: white;
+    border: 5px solid #E6CCFF;
+    border-radius: 0.4em;
+    padding: 0.5em;
+    margin: 1em;
+}
+
+#completed {
+    flex: 1;
+    background-color: white;
+    border: 5px solid #E6CCFF;
+    border-radius: 0.4em;
+    padding: 0.5em;
+    margin: 1em;
+}
+
+#task-note {
+    border: 5px solid purple;
+    border-radius: 0.4em;
+    padding: 0.5em;
+    margin: 1em;
+}
+
+#tasks-title {
+    min-width: 100%;
+    text-align: center;
+    background-color: #dd99ff;
+    border: 5px solid purple;
+    padding: 2px;
+    margin: 5px;
+}
+
+.button_to {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}

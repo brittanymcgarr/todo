@@ -18,5 +18,15 @@
       <% end %>
     </p>
 
+    <% if !task.complete %>
+      <p>
+        <%= button_to "Complete", complete_task_path(task), method: :post %>
+      </p>
+    <% end %>
+
+    <p>
+      <%= link_to "Show this task", task %>
+    </p>
+
   </div>
 </div>
