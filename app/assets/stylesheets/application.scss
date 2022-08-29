@@ -15,6 +15,9 @@
 
  */
 
+$primary: #c11;
+@import "bootstrap";
+
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -100,8 +103,9 @@ a:hover {
 #tasks-title {
     min-width: 100%;
     text-align: center;
-    background-color: #dd99ff;
+    background-color: #fae3ff;
     border: 5px solid purple;
+    border-radius: 0.4em;
     padding: 2px;
     margin: 5px;
 }
@@ -109,7 +113,7 @@ a:hover {
 .button_to {
     background-color: #04AA6D;
     border: none;
-    color: white;
+    border-radius: 0.4em;
     padding: 20px;
     text-align: center;
     text-decoration: none;

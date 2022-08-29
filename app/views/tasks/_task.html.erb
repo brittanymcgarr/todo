@@ -1,8 +1,7 @@
 <div id="task-note">
   <div id="<%= dom_id task %>">
     <p>
-      <strong>Title:</strong>
-      <%= task.title %>
+      <h3><%= task.title %></h3>
     </p>
 
     <p>
@@ -18,15 +17,15 @@
       <% end %>
     </p>
 
+    <p>
+      <%= link_to "Show this task", task %>
+    </p>
+
     <% if !task.complete %>
       <p>
         <%= button_to "Complete", complete_task_path(task), method: :post %>
       </p>
     <% end %>
-
-    <p>
-      <%= link_to "Show this task", task %>
-    </p>
 
   </div>
 </div>
