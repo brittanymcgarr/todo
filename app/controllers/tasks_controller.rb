@@ -1,5 +1,5 @@
 class TasksController < ApplicationController
-  before_action :set_task, only: %i[ show edit update destroy ]
+  before_action :set_task, only: %i[ show edit update destroy complete ]
 
   # GET /tasks or /tasks.json
   def index
@@ -58,6 +58,12 @@ class TasksController < ApplicationController
       format.html { redirect_to tasks_url, notice: "Task was successfully destroyed." }
       format.json { head :no_content }
     end
+  end
+
+  # POST /tasks/1/complete
+  def complete
+    @task = Task.find(params[:id])
+    @task.update(complete: true)
   end
 
   private

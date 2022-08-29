@@ -1,20 +1,22 @@
-<div id="<%= dom_id task %>">
-  <p>
-    <strong>Title:</strong>
-    <%= task.title %>
-  </p>
+<div id="task-note">
+  <div id="<%= dom_id task %>">
+    <p>
+      <strong>Title:</strong>
+      <%= task.title %>
+    </p>
 
-  <p>
-    <strong>Notes:</strong>
-    <%= task.notes %>
-  </p>
+    <p>
+      <strong>Notes:</strong>
+      <%= task.notes %>
+    </p>
 
-  <p>
-    <% if task.complete %>
-      <strong>Complete!</strong>
-    <% else %>
-      <strong>Pending</strong>
-    <% end %>
-  </p>
+    <p>
+      <% if task.complete %>
+        <strong>Complete!</strong>
+      <% else %>
+        <strong>Pending</strong>
+      <% end %>
+    </p>
 
+  </div>
 </div>
